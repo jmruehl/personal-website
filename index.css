@@ -1,0 +1,112 @@
+/* General Styling - Layout */
+
+body {
+  margin: 0;
+  color: #252525;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+}
+
+header,  
+section {
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.portrait-img {
+    width: 240px;
+    border-radius: 4%;
+    padding: 4px;
+    border: px solid #4bcea2;
+    background: #fff;
+}
+
+.container {
+    width: 570px;
+    margin: auto;
+}
+
+
+.bg-dark {
+    background: #252525;
+    color: #fff;
+}
+
+
+/* Typography */
+
+
+h1 {
+    font-size: 60px;
+    font-weight: 300;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+h2 {
+    border-top: solid 1px #c4c4c4;
+    border-bottom: solid 1px #c4c4c4;
+    font-size: 42px;
+    font-weight: 300;
+    padding: 25px 0;
+}
+
+h3 {
+    font-size: 36px;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.accent-text {
+    font-weight: 900;
+    color: #4bcea2;
+    display: block;
+    
+}
+
+.small-text {
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+/* Links and Buttons */
+
+a {
+    color: #4bcea2;
+    font-weight: 900;
+}
+
+a:hover,
+a:focus {
+    background: #252525;
+    color: #fff;
+}
+
+.btn {
+    color: #fff;
+    background: #4bcea2;
+    font-weight: 900;
+    padding: 10px 25px;
+    margin: 10px;
+    display: inline-flex;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #252525;
+    color: #fff;
+}
+
+.bg-dark .btn:hover,
+.bg-dark .btn:focus {
+    background: #fff;
+    color: #252525;
+}
