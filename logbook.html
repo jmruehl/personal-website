@@ -7,16 +7,20 @@
     <body>
         <header class="bg-dark">
             <div class="container">
-                <h1 class="border">Welcome to my<span class="accent-text">log book</span></h1>
-                <p>Some introduction text here to follow. You can read here all the log book entries in a chronological 
-                    order or read directly 
-                    <a href="#most-recent">the most recent entry</a>
+                <h1>Welcome to my<span class="accent-text">log book</span></h1>
                 </p>
             </div>
         </header>
         
         <main>
-            <section class="article">
+            <section id="most-recent">
+                <div class="container">
+                    <h2 class="border">Read the most recent <span class="accent-text">log book entry</span></h2>
+                    <div id="insert-text">Please enable JavaScript in your Broswer to read the latest entry.</div>  
+                </div>
+            </section>
+
+            <section class="log-entry bg-dark">
                 <div class="container">
                     <h3>Creating my very own website</h3>
                     <p class="small-text">Written by <span class="accent-text">Merle</span> on <time datetime="2021-07-09" class="accent-text">July 09, 2021</time></p>
@@ -28,9 +32,10 @@
 					<p class="hidden">Currently working on that! :)</p>
                 </div>
             </section>
-            <section class="article bg-dark">
+
+            <section class="log-entry">
                 <div class="container">
-                    <h3>Add functionality to this site</h3>
+                    <h3>Adding functionality to this site</h3>
                     <p class="small-text">Written by <span class="accent-text">Merle</span> on <time datetime="2021-07-13" class="accent-text">July 13, 2021</time></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qu
                         isque sodales, ligula vel bibendum mollis, magna lorem imperdiet ex, ac facilisis ipsum magn
@@ -51,9 +56,10 @@
                      </p>
                 </div>
             </section>
-            <section class="article">
-                <div class="container" id="most-recent">
-                    <h3>Creating the log book</h3>
+
+            <section class="log-entry bg-dark">
+                <div class="container">
+                    <h3>Starting the log book</h3>
                     <p class="small-text">Written by <span class="accent-text">Merle</span> on <time datetime="2021-07-14" class="accent-text">July 14, 2021</time></p>
                     <p>Yesterday I came up with the idea to label this subpage as 'Log Book' instead of 'Articles'. I assume that this 
                         goes with me living close to the harbour and water. Today I will start using this log book to define my goals for a day,
@@ -62,52 +68,28 @@
                     </p>
                     <p class="hidden">My plans for today: Rework the layout of the log book. I also want to 
                         spend some time on the content, meaning writing more entries to my log book and rework the existing ones. 
-                        And finally I plan to implement a function at my home page to display the most recent log book entry 
+                        And finally I plan to implement a function to display the most recent log book entry 
                         (instead of using static HTML) and to update automatically when I write a new entry.</p>
                 </div> 
             </section>
-            <section class="article bg-dark">
+
+            <section class=" log-entry">
                 <div class="container">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p class="small-text">Written by <span class="accent-text">Merle</span> on <time datetime="2021-07-11" class="accent-text">July 11, 2021</time></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales, ligula vel bibendum mollis, magna 
-                        lorem imperdiet ex, ac facilisis ipsum magna non tellus. Nulla tristique feugiat felis eu placerat. Fusce 
-                        ullamcorper mauris sed erat mollis elementum id sed nunc. Nunc eget nibh vel mi ultricies ullamcorper. Nam 
-                        venenatis pretium nibh ac bibendum. Donec vel orci ac est lacinia euismod. Nulla convallis justo sit amet enim 
-                        varius ullamcorper. 
+                    <h3>Keep on learning</h3>
+                    <p class="small-text">Written by <span class="accent-text">Merle</span> on <time datetime="2021-07-15" class="accent-text">July 15, 2021</time></p>
+                    <p>Today I want to dive deeper into JavaScript and finish the tasks I started yesterday. 
+                        I will spend some time on coding this website and will then continue the Scrimba course.
                         <button class="display-text">continue reading</button>
                     </p>
-                     <p class="hidden">Proin ut est justo. Aliquam sit amet vestibulum leo. Morbi nec consectetur elit. 
-                        Pellentesque at libero in magna euismod semper. Donec vel risus blandit, porttitor nibh ac, tempus sem. 
-                        Pellentesque dictum nibh purus, vitae tristique purus ullamcorper at. Curabitur porta eleifend metus quis 
-                        ultrices. Fusce vitae lobortis nisi. Praesent mattis eros in enim lacinia mollis at eu nunc. Nulla ornare 
-                        ullamcorper elit, eget tincidunt sem blandit eu. Morbi convallis non magna eu dignissim. Sed scelerisque 
-                        gravida nunc eget rhoncus. Aenean porttitor orci vel erat pharetra maximus. Nullam sollicitudin velit id                             nisl porta, nec viverra felis ultricies. Nullam mattis tempor risus, sed volutpat ante commodo sit amet.
+                     <p class="hidden"> Yesterday I created a first version of the portfolio page. 
+                         Now time to create content to this page aka create more projects. :) 
+                         I can now display the most-recent log book entry also on top of the page. 
+                         Unfortunately the button is not working yet as this button is not in the HTML but in the JavaScript-file 
+                         the EventListener I added to the other buttons isn't working here. I will have to fix this issue. 
                     </p>
                 </div>
             </section>
-            <section class="article">
-                <div class="container">
-                    <h3>Praesent at dolor in </h3>
-                    <p class="small-text">Written by <span class="accent-text">Merle</span> on <time datetime="2021-07-13" class="accent-text">July 13, 2021</time></p>
-                    <p>Praesent at dolor in diam lobortis lobortis. Cras eleifend, nibh in luctus suscipit, odio ante commodo nunc, 
-                        non aliquet erat velit ut erat. Ut viverra nunc nisl, vel luctus metus scelerisque ut. Integer eu volutpat nibh, 
-                        viverra molestie tellus. Sed placerat, velit ut tempus sollicitudin, felis nibh faucibus purus, sed mattis velit 
-                        dui ut elit. Donec elementum erat eu scelerisque rhoncus. Cras rhoncus lobortis nisi, tincidunt facilisis turpis 
-                        blandit in. 
-                        <button class="display-text">continue reading</button>
-                    </p>
-                    <p class="hidden">Suspendisse dolor lorem, rhoncus non felis ut, placerat elementum eros. Nulla interdum convallis 
-                        iaculis. Vestibulum vulputate bibendum nibh a placerat. Mauris et varius velit. Nam vitae tristique odio. Fusce 
-                        bibendum nisi eget risus placerat, sed venenatis diam fringilla. Sed ornare urna quis interdum sagittis. Duis 
-                        lacinia orci in ipsum scelerisque, nec finibus augue mollis. In ex ipsum, imperdiet at convallis sed, volutpat a 
-                        nibh. Donec tincidunt sollicitudin nisi non ultrices.</p>
-                </div> 
-            </section>
-            
-          
         </main>
 		<script src="js/logbook.js"></script>
-        <script src="js/index.js"></script>
     </body>
 </html>
