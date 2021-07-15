@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head lang="en">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <title>Merle Rühl</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" >
@@ -16,24 +17,35 @@
         <main>
             <section class="about-me">
                 <div class="container">
-                    <h2>I am a <span class="accent-text">Frontend Developer</span></h2>
+                    <h2 class="border">I am a <span class="accent-text">Frontend Developer</span></h2>
                     <p>.. and currently looking for job opportunites. </p>
-                    <p> This is my first website. Horray! I build this site along with the amazing Frontend Developer Career Path by Scrimba. Find the challenge from the course and my solution <a href="https://scrimba.com/scrim/coe2346f59e65d8edd0bbf1d0">here</a>.</p>
-                    <a href="#" class="btn">See my portfolio</a>
+                    <p> This is my first website. Horray! I build this site along with the amazing Frontend Developer Career Path by Scrimba.
+                         Find the challenge from the course and my solution <a href="https://scrimba.com/scrim/coe2346f59e65d8edd0bbf1d0">here</a>.
+                    </p>
+                    <p>Starting with this website I aim to code more projects to improve my coding skills and create my own portfolio.
+                    </p>
+                    <a href="portfolio.html" class="btn">See my portfolio</a>
                 </div>
             </section>
             
-            <section class="porfolio bg-dark">
+            <section class="portfolio bg-dark">
                 <div class="container">
-                    <h2>My most recent<span class="accent-text">article</span></h2>
-                    <article>
-                        <h3>Creating my very own website</h3>
-                        <p class="small-text">Written by Merle on <time datetime="2021-07-09">July 09, 2021</time></p>
-                        <p>So this is my first website. I'm currently learning coding with a course on the amazing Scrimba plattform. Today I am proud of my achievements and the effort I put into coding. See this website as the starting point of my journey. There is much more to come! <a href="#">continue reading</a></p> 
-                        <a href="articles.html" class="btn">Read more articles</a>   
-                    </article>
-            </div>
+                    <h2 class="border">My most recent<span class="accent-text">log book entry</span></h2> 
+                    <div id="most-recent-entry">
+                        <p class="small-text">Written by <span class="accent-text">Merle</span> on <time datetime="2021-07-14" class="accent-text">July 14, 2021</time></p>
+                    <p>Yesterday I came up with the idea to label this subpage as 'Log Book' instead of just 'Articles'. I assume that this 
+                        goes with me living close to the harbour and water. Today I will start using this log book to define my goals for a day,
+                        note my coding learnings and progress.
+                        <button class="display-text">continue reading</button>
+                    </p>
+                    <p class="hidden">My plans for today: Rework the layout of the log book and maybe add an image, or two. I also want to 
+                        spend some time on the content, meaning writing more entries to my log book and rework the existing ones. 
+                        And finally I plan to implement a function at my home page, that displays the most recent log book entry 
+                        (instead of using static HTML) and updates automatically when I write a new entry.</p>Soon to be displayed here automatically!</div>
+                    <a href="logbook.html" class="btn">Read my log book</a>   
+                </div>
             </section>
         </main>
+        <script src="js/index.js"></script>
     </body>
 </html>
