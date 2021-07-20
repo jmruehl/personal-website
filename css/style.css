@@ -1,4 +1,7 @@
 /* General Styling - Layout */
+* {
+    box-sizing: border-box;
+}
 
 body {
   margin: 0;
