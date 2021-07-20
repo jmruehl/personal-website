@@ -1,4 +1,5 @@
 /* General Styling - Layout */
+
 * {
     box-sizing: border-box;
 }
@@ -17,19 +18,18 @@ section {
     margin: 0 auto;
 }
 
-.portrait-img {
-    width: 240px;
-    border-radius: 4%;
-    padding: 4px;
-    border: px solid #4bcea2;
-    background: #fff;
+footer {
+    padding: 50px;
 }
 
 .container {
-    width: 570px;
+    width: 600px;
     margin: auto;
 }
 
+.container-flex {
+    display: flex;
+}
 
 .bg-dark {
     background: #303030;
@@ -39,6 +39,23 @@ section {
 .border {
     border-top: solid 1px #c4c4c4;
     border-bottom: solid 1px #c4c4c4;
+    padding: 25px 0;
+}
+
+/* Images */
+
+.portrait-img {
+    width: 240px;
+    border-radius: 1%;
+    padding: 4px;
+    margin-bottom: 20px;
+    border: px solid #4bcea2;
+    background: #fff;
+}
+
+.portfolio-img {
+    height: 200px;
+    padding-top: 22px;
 }
 
 
@@ -48,14 +65,13 @@ section {
 h1 {
     font-size: 60px;
     font-weight: 300;
-    padding-top: 0;
     margin-top: 0;
+
 }
 
 h2 {
     font-size: 42px;
     font-weight: 300;
-    padding: 25px 0;
 }
 
 h1 span,
@@ -68,7 +84,6 @@ h3 {
     font-size: 36px;
     margin-bottom: 0;
     margin-top: 0;
-    
 }
 
 p {
@@ -83,6 +98,11 @@ p {
 .small-text {
     font-size: 16px;
     margin-top: 2px;
+}
+
+.portfolio-text {
+    padding-right: 30px;
+    text-align: justify;
 }
 
 /* Links and Buttons */

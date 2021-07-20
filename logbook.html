@@ -8,8 +8,7 @@
     <body>
         <header class="bg-dark">
             <div class="container">
-                <h1>Welcome to my<span class="accent-text">log book</span></h1>
-                </p>
+                <h1 class="border">Welcome to my<span class="accent-text">log book</span></h1>
             </div>
         </header>
         
@@ -26,34 +25,23 @@
                     <h3>Creating my very own website</h3>
                     <p class="small-text">Written by <span class="accent-text">Merle</span> on <time datetime="2021-07-09" class="accent-text">July 09, 2021</time></p>
                     <p>So this is my first website. I'm currently learning coding with a course on the amazing Scrimba plattform. 
-                        Today I am proud of my achievements and the effort I put into coding. 
-                        See this website as the starting point of my journey. There is much more to come!
-                        <button class="display-text">continue reading</button>
-					</p>   
-					<p class="hidden">Currently working on that! :)</p>
+                        Today I am proud of my achievements and the effort I put into learning to code. 
+                        See this website as the starting point of my journey. Find a description of start of this project at 
+                        <a href="portfolio.html#personal-website" class="">my portfolio site</a>.
+                 
                 </div>
             </section>
 
-            <section class="log-entry">
+            <section class="log-entry" id="adding-functionality">
                 <div class="container">
                     <h3>Adding functionality to this site</h3>
-                    <p class="small-text">Written by <span class="accent-text">Merle</span> on <time datetime="2021-07-13" class="accent-text">July 13, 2021</time></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qu
-                        isque sodales, ligula vel bibendum mollis, magna lorem imperdiet ex, ac facilisis ipsum magn
-                        a non tellus. Nulla tristique feugiat felis eu placerat. Fusce ullamc
-                        orper mauris sed erat mollis elementum id sed nunc. Nunc eget nibh ve
-                        l mi ultricies ullamcorper. Nam venenatis pretium nibh ac bibendum. Don
-                        ec vel orci ac est lacinia euismod. Nulla convallis justo sit amet enim 
-                        varius ullamcorper. 
+                    <p class="small-text">Updated by <span class="accent-text">Merle</span> on <time datetime="2021-07-20" class="accent-text">July 20, 2021</time></p>
+                    <p>As a result of the Scrimba challenge this side had a few great looking buttons with no function at all. 
+                        So I added some JavaScript code to make them work.
                         <button class="display-text">continue reading</button>
                     </p>
-                    <p class="hidden">Proin ut est justo. Aliquam sit amet vestibulum leo. Morbi nec consectetur elit. 
-                         Pellentesque at libero in magna euismod semper. Donec vel risus blandit, porttitor nibh ac, tempus sem. 
-                         Pellentesque dictum nibh purus, vitae tristique purus ullamcorper at. Curabitur porta eleifend metus quis 
-                        ultrices. Fusce vitae lobortis nisi. Praesent mattis eros in enim lacinia mollis at eu nunc. Nulla ornare 
-                        ullamcorper elit, eget tincidunt sem blandit eu. Morbi convallis non magna eu dignissim. Sed scelerisque 
-                        gravida nunc eget rhoncus. Aenean porttitor orci vel erat pharetra maximus. Nullam sollicitudin velit id 
-                        nisl porta, nec viverra felis ultricies. Nullam mattis tempor risus, sed volutpat ante commodo sit amet.
+                    <p class="hidden">In addition each log book entry hides a part of the text when loading and can be displayed 
+                        when clicking 'continue reading'. The button is coded to disappear when clicked. 
                      </p>
                 </div>
             </section>
@@ -124,10 +112,11 @@
                     <h3>Improving the details</h3>
                     <p class="small-text">Written by <span class="accent-text">Merle</span> on <time datetime="2021-07-20" class="accent-text">July 20, 2021</time></p>
                     <p>Today I want to improve the details of my website. At the moment a few 'Lorem Ipsum' texts are remaining that I want to 
-                        replace. Yesterday I had a closer look at the non-working button in the 'most-recent entry' at the top of my log book.
+                        replace. Additionally I will also improve the first entry on my portfolio sub page about this project. 
                         <button class="display-text">continue reading</button>
                     </p>
-                    <p class="hidden">I actually just needed to change some lines of code in the Logbook-JavaScript-File, so that I first create this section and 
+                    <p class="hidden">Yesterday I had a closer look at the non-working button in the 'most-recent entry' at the top of my log book.
+                        I actually just needed to change some lines of code in the Logbook-JavaScript-File, so that I first create this section and 
                         afterwards add an Event Listener to all the buttons, including the one of this section. And now its working! Yey!
                         It's amazing how simple solutions in coding can be. I didn't had to write new code or add anything to make that button work. 
                         It was as simple as running the code in another order. 
@@ -136,6 +125,11 @@
                     </p>
                 </div> 
             </section>
+
+            <footer>
+                <a href="portfolio.html" class="btn">See my portfolio</a>
+                <a href="index.html" class="btn">Return to main page</a>
+            </footer>    
 		<script src="js/logbook.js"></script>
     </body>
 </html>

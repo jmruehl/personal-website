@@ -18,3 +18,11 @@ btns.forEach((el, i) => el.addEventListener('click', event => {
     el.classList.add('hidden')
     fullText[i].classList.remove('hidden')
     }))
+
+//Adjust color of footer automatically 
+
+const footer = document.querySelector('footer')
+
+ if(btns.length %2 === 1) {
+    footer.className = "bg-dark"
+ }
